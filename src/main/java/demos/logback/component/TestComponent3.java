@@ -7,10 +7,10 @@ import org.springframework.stereotype.Component;
 
 import ch.qos.logback.classic.Level;
 
-//@Component
+@Component
 public class TestComponent3 extends DemoLog {
 
-    // @PostConstruct
+    @PostConstruct
     public void setup() {
         ch.qos.logback.classic.Logger logbackLogger = (ch.qos.logback.classic.Logger) LoggerFactory
                 .getLogger(TestComponent3.class);
